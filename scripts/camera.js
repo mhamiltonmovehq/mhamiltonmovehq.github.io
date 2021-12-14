@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function() {
         displayErrorMessage("Your browser doesn't have support for the navigator.getUserMedia interface.");
     } else {
         // Request the camera.
-        navigator.getMedia({
+        navigator.mediaDevices.getUserMedia({
                 video: true
             },
             // Success Callback
